@@ -25,7 +25,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-3  sm:grid-cols-2 gap-8'>
+        <div className='grid grid-cols-2 '>
           <div>
             <h3 className='font-semibold text-[1.1rem] mb-4'>Main menu</h3>
             {mainMenu.map((item, index) => (
@@ -42,17 +42,17 @@ const Footer = () => {
               </div>
             ))}
           </div>
-          <div>
-            <h3 className='font-semibold text-[1.1rem] mb-4'>Contact</h3>
-            {footerContacts.map((item, index) => (
-              <div key={index} className='flex items-center gap-4 mb-4'>
-                <div className='text-xl'>{item.icon} </div>
-                <div className=''>{item.text} </div>{' '}
-              </div>
-            ))}
-          </div>
+        </div>{' '}
+        <div>
+          <h3 className='font-semibold text-[1.1rem] mb-4'>Contact</h3>
+          {footerContacts.map((item, index) => (
+            <div key={index} className='flex items-center gap-4 mb-4'>
+              <div className='text-xl'>{item.icon} </div>
+              <div className=''>{item.text} </div>{' '}
+            </div>
+          ))}
         </div>
-      </div>
+      </div>{' '}
       <div className='flex flex-wrap justify-between gap-4 pb-8'>
         <div>
           Copyright &#169; <span className='font-bold'>Aziz Jerbi</span>.All
