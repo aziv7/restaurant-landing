@@ -13,9 +13,12 @@ const NavIcon = () => {
         <div className='flex sm:gap-8 gap-6  bg-black rounded-xl py-2 px-4'>
           {mainMenu.map((subitem) => (
             <div
+              onClick={() => setToggle(!toggle)}
               className='cursor-pointer p-2 rounded-full bg-glass'
               key={subitem.id}>
-              <a className='text-xl text-white'>{subitem.icon} </a>
+              <a href={`#${subitem.href}`} className='text-xl text-white'>
+                {subitem.icon}{' '}
+              </a>
             </div>
           ))}
         </div>
